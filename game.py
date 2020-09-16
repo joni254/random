@@ -5,9 +5,10 @@ guess_limit = 3
 out_of_guesses = False
 
 while secret_word != guess and not(out_of_guesses):
-    guess_count = guess_count + 1
+    
     if guess_count < guess_limit:
         guess = input('not that one! Try again:')
+        guess_count = guess_count + 1
     else:
         out_of_guesses = True
         
