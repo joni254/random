@@ -1,15 +1,19 @@
 class Num:
-    def dbl(self, numb):
-        ans = numb * 2
-        return ans
+    def __init__(self, numb):
+      self.numb = numb
+      self.balancel = 77
 
-    def trip(self, numb):
-        ans = numb * 3
-        return ans
+    def db(self):
+        return self.numb
+    
+    def bl(self):
+       
+        return self.balancel
         
-p = Num()
-print(p.dbl(4))
-print(p.trip(5))
+               
+p = Num("john")
+print(p.db())
+print(p.bl())
     
 
 
